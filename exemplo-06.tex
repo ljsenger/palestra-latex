@@ -1,0 +1,24 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\begin{document}
+\section{Introdução}
+% espaços
+Olá       Mundo!
+Mesma linha.
+
+Outro parágrafo.
+
+A representação de um neurônio está ilustrada na Figura~\ref{fig:neuronio} e a ativação de um neurônio é descrita pela Equação~\ref{eq:ativacao}.
+\begin{equation}
+y_i = \sum_{i=0}^{n} w_i \times x_i
+\end{equation}\label{eq:ativacao}
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=.5]{neuronio}
+	\caption{Representação de um neurônio}\label{fig:neuronio}
+\end{figure}
+
+\end{document}

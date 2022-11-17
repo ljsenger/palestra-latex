@@ -1,0 +1,4 @@
+\babel@toc {brazil}{}
+\contentsline {chapter}{\numberline {1}Redes Neurais}{4}{}%
+\contentsline {chapter}{\numberline {2}Material e Métodos}{5}{}%
+\contentsline {chapter}{\numberline {A}Análise estatística}{7}{}%

@@ -1,0 +1,5 @@
+\babel@toc {brazil}{}
+\contentsline {chapter}{\numberline {1}Introdução}{4}{}%
+\contentsline {subsection}{\numberline {1.0.1}Valores padrão}{4}{}%
+\contentsline {chapter}{\numberline {2}Material e Métodos}{5}{}%
+\contentsline {chapter}{\numberline {A}Análise estatística}{7}{}%

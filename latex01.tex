@@ -1,0 +1,67 @@
+\documentclass[a4paper, brazil, 12pt , twocolumn]{article}
+\input{pacotes}
+\title{Aula de Latex}
+\author{Luciano Senger}
+\begin{document}
+	\maketitle
+\section{Introdução}
+
+Hello    World!
+O parâmetro \cf{alpha} regula a quantidade de tensão no sistema.
+Ele deve ser \textit{escolhido} empiricamente~\footnote{Consultar manual.}.
+\subsection{Valores padrão}
+O valor padrão é igual a~30 ou~50.
+A tensão final será igual $v = \sum_{i=0}^n \frac{x \times y}{\alpha}$, que corresponde ao total.
+Conforme equação~\ref{eq:tensao}, pode-se observar que~\ref{fig:alfa}.
+
+\begin{equation}
+	v = \sum_{i=0}^n \frac{x \times y}{\alpha}
+\end{equation}\label{eq:tensao}
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=.1]{mapa}
+	\caption{Mapa mental do \LaTeX}
+\end{figure}\label{fig:alfa}
+
+O parâmetro {\Huge beta} \textbf{regula} a impedância.
+Já aprendi 10\% de latex.
+As variáveis são:
+\begin{itemize}
+	\item variavel b;
+	\item alpha;
+	\item variavel c.
+\end{itemize}
+
+\begin{enumerate}
+	\item variavel b;
+	\item alpha;
+	\item variavel c.
+\end{enumerate}
+A Tabela~\ref{tab:idade} apresenta os valores médio.
+\begin{table}[htb]
+	\caption{Idade e peso médio observados}\label{tab:idade}
+	\centering
+	
+	\begin{tabular}{lc}
+		\hline
+		\bf Idade & \bf Altura \\ 
+		\hline
+		30 & 180 \\
+		40 & 175 \\
+		\hline
+		
+		\end{tabular}
+\end{table}
+\lstset{language=Python}
+\lstinputlisting{token.py}
+
+Conforme descrito em~\cite{Harris2012,Hennessy2014,Goodfellow2016,Mota2011}, pode-se observar que.
+
+\bibliographystyle{abnt-alf}
+\bibliography{base}
+\end{document}
+
+
+
+

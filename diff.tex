@@ -1,0 +1,121 @@
+\documentclass[a4paper, brazil, 12pt , onecolumn]{report}
+%DIF LATEXDIFF DIFFERENCE FILE
+%DIF DEL latex02.tex      Tue Aug  2 19:53:46 2022
+%DIF ADD latex02rev.tex   Tue Aug  2 19:55:05 2022
+\input{pacotes}
+\usepackage[Bjarne]{fncychap}
+\title{Aula de Latex}
+\author{Luciano Senger}
+\makeindex
+%DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF UNDERLINE PREAMBLE %DIF PREAMBLE
+\RequirePackage[normalem]{ulem} %DIF PREAMBLE
+\RequirePackage{color}\definecolor{RED}{rgb}{1,0,0}\definecolor{BLUE}{rgb}{0,0,1} %DIF PREAMBLE
+\providecommand{\DIFadd}[1]{{\protect\color{blue}\uwave{#1}}} %DIF PREAMBLE
+\providecommand{\DIFdel}[1]{{\protect\color{red}\sout{#1}}}                      %DIF PREAMBLE
+%DIF SAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddbegin}{} %DIF PREAMBLE
+\providecommand{\DIFaddend}{} %DIF PREAMBLE
+\providecommand{\DIFdelbegin}{} %DIF PREAMBLE
+\providecommand{\DIFdelend}{} %DIF PREAMBLE
+\providecommand{\DIFmodbegin}{} %DIF PREAMBLE
+\providecommand{\DIFmodend}{} %DIF PREAMBLE
+%DIF FLOATSAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddFL}[1]{\DIFadd{#1}} %DIF PREAMBLE
+\providecommand{\DIFdelFL}[1]{\DIFdel{#1}} %DIF PREAMBLE
+\providecommand{\DIFaddbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFaddendFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelendFL}{} %DIF PREAMBLE
+%DIF COLORLISTINGS PREAMBLE %DIF PREAMBLE
+\RequirePackage{listings} %DIF PREAMBLE
+\RequirePackage{color} %DIF PREAMBLE
+\lstdefinelanguage{DIFcode}{ %DIF PREAMBLE
+%DIF DIFCODE_UNDERLINE %DIF PREAMBLE
+  moredelim=[il][\color{red}\sout]{\%DIF\ <\ }, %DIF PREAMBLE
+  moredelim=[il][\color{blue}\uwave]{\%DIF\ >\ } %DIF PREAMBLE
+} %DIF PREAMBLE
+\lstdefinestyle{DIFverbatimstyle}{ %DIF PREAMBLE
+	language=DIFcode, %DIF PREAMBLE
+	basicstyle=\ttfamily, %DIF PREAMBLE
+	columns=fullflexible, %DIF PREAMBLE
+	keepspaces=true %DIF PREAMBLE
+} %DIF PREAMBLE
+\lstnewenvironment{DIFverbatim}{\lstset{style=DIFverbatimstyle}}{} %DIF PREAMBLE
+\lstnewenvironment{DIFverbatim*}{\lstset{style=DIFverbatimstyle,showspaces=true}}{} %DIF PREAMBLE
+%DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
+
+\begin{document}
+	\maketitle
+	\tableofcontents
+	\listoffigures
+	\listoftables
+\chapter{Introdução}
+
+Hello World!
+O parâmetro \cf{alpha} regula a quantidade de tensão no sistema, conforme página \pageref{sec:mat}.
+Ele deve ser \textit{escolhido} empiricamente~\footnote{Consultar manual.}.
+De acordo com a nacional re \mbox{UTSCA}. 
+\subsection{Valores padrão}
+O valor padrão é igual a~30 ou~50.
+A tensão final será igual $v = \sum_{i=0}^n \frac{x \times y}{\alpha}$, que corresponde ao total.
+Conforme equação~\ref{eq:tensao}, pode-se observar que~\ref{fig:alfa}.
+
+\begin{equation}
+	v = \sum_{i=0}^n \frac{x \times y}{\alpha}
+\end{equation}\label{eq:tensao}
+
+\begin{figure}[htb]
+	\centering
+	\includegraphics[scale=.1]{mapa}
+	\caption{Mapa mental do \LaTeX}
+\end{figure}\label{fig:alfa}
+
+O parâmetro {\Huge \index{beta}} \textbf{regula} a impedância.
+Já aprendi 10\% de latex.
+As variáveis são:
+\begin{itemize}
+	\item variavel b;
+	\item alpha;
+	\item variavel c.
+\end{itemize}
+
+\begin{enumerate}
+	\item variavel b;
+	\item alpha;
+	\item variavel c.
+\end{enumerate}
+A Tabela~\ref{tab:idade} apresenta os valores médio.
+\begin{table}[htb]
+	\caption{Idade e peso médio observados}\label{tab:idade}
+	\centering
+
+	\begin{tabularx}{0.9\linewidth}{lX}
+%	\begin{tabular}{cc}
+		\hline
+		\bf Idade & \bf Altura \\ 
+		\hline
+		30 & 180 sdfjllkdsklfjdlkfjlkdsj ljsdflkjsdlkfjdslkf\\
+		40 & 175 \\
+		\hline
+%\end{tabular}		
+		\end{tabularx}
+\end{table}
+\chapter{Material e Métodos}\label{sec:mat}
+\lipsum[3-8]
+\lstset{language=Python}
+\lstinputlisting{token.py}
+
+Conforme descrito em~\cite{Harris2012,Hennessy2014,Goodfellow2016,Mota2011}, pode-se observar \DIFdelbegin \DIFdel{que}\DIFdelend \DIFaddbegin \DIFadd{o cálculo total de alfa}\DIFaddend .
+
+\printindex
+\appendix
+\chapter{Análise estatística}
+\lipsum[3-5]
+\bibliographystyle{abnt-alf}
+\bibliography{base}
+\end{document}
+
+
+
+
